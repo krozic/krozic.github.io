@@ -75,6 +75,8 @@
 							<ul class="icons major">
 								<li><span title="R Studio"><span class="iconify" data-icon="la:r-project" data-width="60"></span></span></li>
 								<li><span title="Python"><span class="iconify" data-icon="fa-brands:python" data-width="50"></span></span></li>
+								<li><span title="AWS"><span class="iconify" data-icon="bxl:aws" data-width="60"></span></span></li>
+								<li><span title="GCP"><span class="iconify" data-icon="bxl:google-cloud" data-width="60"></span></span></li>
 								<li><span title="SQL"><span class="iconify" data-icon="carbon:sql" data-width="65"></span></span></li>
 								<li><span title="Microsoft Excel"><span class="iconify" data-icon="file-icons:microsoft-excel" data-width="55"></span></span></li>
 								<li><span title="Tableau"><span class="iconify" data-icon="ion:logo-tableau" data-width="50"></span></span></li>
@@ -92,6 +94,13 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
+							<div class="image"><img src="images/YouTube_AWS_proj.svg" alt="" /></div><div class="content">
+								<h2>YouTube Analytics on AWS</h2>
+								<p>Built storage & pipeline infrastructure with AWS CLI then loaded structured and semi-structured YouTube data into S3 Data Lake. Transformed .csv and .json data into Apache Parquet with python scripts on AWS Lambda and Glue ETL. Built data catalogs with Glue Crawler to form the schema of the Data Lake and built a Glue ETL to produce an Analytic Table. Visualized results in a dashboard using AWS QuickSight.</p>
+								<p><a href="https://github.com/krozic/youtube_aws_analysis">View Github</a></p>
+							</div>
+						</section>
+						<section class="spotlight">
 							<div class="image"><img src="images/google_cloud_platform.jpg" alt="" /></div><div class="content">
 								<h2>Google Analytics Dashboard</h2>
 								<p>Extract-transform-loaded (ETL): GA data (1.4 million records) ➜ BigQuery ➜ Google Cloud Storage ➜ Tableau Server Connection. <br><br> BigQuery was used to calculate desirable metrics (Page views, time on page, bounces, sessions) for use as KPIs in Tableau. Created filters and parameters for segmentation and comparison analysis.</p>
@@ -103,6 +112,13 @@
 								<h2>Word Prediction Model</h2>
 								<p>Developed an application in `shiny` which accepts a string of words and returns a table of recommendations sorted by probability. The `tidytext` package in R was used for processing, cleaning and analyzing the data, while `ggplot2` was used for visualizations.</p>
 								<p><a href="https://www.kylerozic.com/Word-Prediction-Model/">View Report</a> | <a href="https://github.com/krozic/Word-Prediction-Model">View Github</a> | <a href="https://krozic.shinyapps.io/Word_Prediction_Application/">View App</a></p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/Spotify_ETL.svg" alt="" /></div><div class="content">
+								<h2>Spotify Recently Played Songs</h2>
+								<p>Extracted personal data from Spotify API using OAuth 2.0 framework and the authorization code flow structure for long-running apps. Transformed this raw data into a data frame using `pandas` & loaded resulting data frame into SQL Server database using `pyodbc` and `SQLAlchemy` to append new data. Scheduled the above batch ETL process using Apache Airflow.</p>
+								<p><a href="https://github.com/krozic/spotify_recent_song_etl">View Github</a></p>
 							</div>
 						</section>
 						<section class="spotlight">
